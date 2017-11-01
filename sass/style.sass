@@ -1,0 +1,116 @@
+$black: #222
+$white: #fff
+$pink: #fbc2eb
+$bloo: #a6c1ee
+$yellow: #FCF3AF
+$light-bloo: rgba(157, 224, 252, 1)
+
+$font-text: VT323, sans-serif
+$border: 3px solid $black
+$border-radius: 5px
+
+$board-landscape: 80vh
+$board-portrait: 80vw
+
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	background: $light-bloo
+	font-family: $font-text
+
+.wrapper
+	padding: 0rem
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.txt
+	font-size: 5rem
+	color: $black
+	line-height: 4rem
+	margin-bottom: 1rem
+	margin-top: 1rem
+
+.smaller
+	font-size: 2rem
+	margin-bottom: -1rem
+
+.intro
+	font-size: 3rem
+	margin: 2em 0
+
+#message
+	text-align: center
+
+.dialogue
+	width: 100vw
+	height: 100vh
+	background: $light-bloo
+	text-align: center
+	padding: 1rem
+	position: absolute
+	top: 0
+	z-index: 1
+
+.board
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	justify-content: space-between
+	background: $yellow
+	padding: 1em
+	border-radius: $border-radius
+	@media screen and (orientation: landscape)
+		width: $board-landscape
+		height: $board-landscape
+	@media screen and (orientation: portrait)
+		width: $board-portrait
+		height: $board-portrait
+
+.row
+	display: flex
+	flex-wrap: wrap
+	flex-direction: row
+	justify-content: space-between
+	align-items: space-between
+	&.center
+		justify-content: center
+		align-items: center
+
+.separator
+	margin: 0 2em
+
+.space
+	display: flex
+	justify-content: center
+	align-items: center
+	font-size: 3rem
+	font-weight: 700
+	cursor: pointer
+	padding: 0.5rem
+	border-radius: $border-radius
+	border: $border
+	&:hover
+		box-shadow: 5px 5px $black
+		transform: translate(-5px, -5px)
+	@media screen and (orientation: landscape)
+		width: calc(#{$board-landscape}/3.5)
+		height: calc(#{$board-landscape}/3.5)
+	@media screen and (orientation: portrait)
+		width: calc(#{$board-portrait}/3.5)
+		height: calc(#{$board-portrait}/3.5)
+
+.pinks
+	@extend .space
+	background: $pink
+
+.bloos
+	@extend .space
+	background: $bloo
+
+.choice
+	background: $yellow

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="Let the epic battle for supremacy begin!">
+
+    <title>Cats vs. Unicorns</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- project-specific javascript -->
+    <script type="text/javascript" src="/cats-vs-unicorns/static/js/game.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+
+    <!-- project CSS -->
+    <link rel="stylesheet" href="/cats-vs-unicorns/static/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="dialogue" id="choose">
+        <div class="txt intro">Choose your weapon wisely...</div>
+        <div class="row center">
+            <div class="space choice" id="cat">
+                <img src="/cats-vs-unicorns/static/img/cat.png">
+            </div>
+            <div class="txt smaller separator">vs.</div>
+            <div class="space choice" id="unicorn">
+                <img src="/cats-vs-unicorns/static/img/unicorn.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="txt" id="message">
+            <span class="smaller">Let's have a nice relaxing</span>
+            <br /> EPIC BATTLE
+        </div>
+        <div class="board">
+            <div class="row">
+                <div class="pinks" id="num1" value="1">1</div>
+                <div class="bloos" id="num2" value="2">2</div>
+                <div class="pinks" id="num3" value="3">3</div>
+            </div>
+            <div class="row">
+                <div class="bloos" id="num4" value="4">4</div>
+                <div class="pinks" id="num5" value="5">5</div>
+                <div class="bloos" id="num6" value="6">6</div>
+            </div>
+            <div class="row">
+                <div class="pinks" id="num7" value="7">7</div>
+                <div class="bloos" id="num8" value="8">8</div>
+                <div class="pinks" id="num9" value="9">9</div>
+            </div>
+        </div>
+    </div>
+
+</body>
