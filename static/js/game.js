@@ -26,7 +26,7 @@ $(document).ready(function () {
         cpuEmoji = '';
         tooks = [];
         $("[id^='num']").html('');
-        $("#message").html('<span class="smaller">Let\'s have a nice relaxing</span><br />EPIC BATTLE');
+        $("#message").html('<p class="smaller">Let\'s have a nice relaxing</p><span class="bigger">EPIC BATTLE</p>');
 
         $("#choose").show();
         $("#cat").click(function () {
@@ -50,19 +50,19 @@ $(document).ready(function () {
     }
 
     async function pWin() {
-        $("#message").html('YOU WON!<br /><span class="smaller">Your mighty skills have saved the day!</span>');
+        $("#message").html('<p class="bigger">YOU WON!</p><p class="smaller">Your mighty skills have saved the day!</p>');
         await sleep(3000);
         reset();
     }
 
     async function cpuWin() {
-        $("#message").html('You lost!<br /><span class="smaller">You fought well, but alas your foe has bested you.</span>');
+        $("#message").html('<p class="bigger">You lost!</p><p class="smaller">You fought well, but alas your foe has bested you.</p>');
         await sleep(3000);
         reset();
     }
 
     async function draw() {
-        $("#message").html('It\'s a draw.<br /><span class="smaller">It seems you are destined to battle again...</span>');
+        $("#message").html('<p class="bigger">It\'s a draw.</p><p class="smaller">It seems you are destined to battle again...</p>');
         await sleep(3000);
         reset();
     }
