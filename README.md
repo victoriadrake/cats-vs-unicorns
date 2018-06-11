@@ -1,6 +1,6 @@
 # Cats vs. Unicorns
 
-**See the whole thing working here: [vickylai.io/cats-vs-unicorns](https://vickylai.io/cats-vs-unicorns/)**
+**See the whole thing working here: [vickylai.com/cats-vs-unicorns](https://vickylai.com/cats-vs-unicorns/)**
 
 ***
 
