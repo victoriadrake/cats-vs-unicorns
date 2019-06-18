@@ -6,7 +6,7 @@
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Victoria Lai",
+    "author": "Victoria Drake",
     "license": "ISC",
     "devDependencies": {
       "critical": "^0.9.1",
